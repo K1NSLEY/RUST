@@ -22,13 +22,13 @@ fn main() {
     println!("-----------------------------------------------------");
     println!("              Rust Concat");
     
-    let mut nomes = vec!["Kinsley","Eduardo","Fisher"];
+    let mut nomes = vec!["Kinsley", "Eduardo", "Fisher"];
     println!("The {} are friends", nomes.join(", "));
     
     let nome1: &str = "Kinsley";
     let nome2: &str = "Eduardo";
     let nome3: &str = "Fisher";
-    println!("Now {}, {} e {} now are enemies",nome1,nome2,nome3);
+    println!("Now {}, {} e {} now are enemies", nome1, nome2, nome3);
     println!("-----------------------------------------------------");
     
     
@@ -37,24 +37,26 @@ fn main() {
     println!("              Repeat Loops (for)");
     println!("-----------------------------------------------------");
     for nome in &nomes {
-        println!("Nome: {} na lista",nome)
+        println!("Nome: {} na lista", nome)
     }
     
     println!();
     println!("-----------------------------------------------------");
     println!("             Interactions with batteries");
     println!("-----------------------------------------------------");
-    //let mut nomes = vec!["Kinsley","Eduardo","Fisher"]; alredy exists
-    nomes.push("10");  // Adiciona 10 na pilha
-    let nomes = nomes.pop();  // Remove o último elemento (topo da pilha)
-    let nomes = nomes.last();  // Obtém uma referência ao topo da pilha
-    println!("A pilha está vazia? {}", nomes.is_empty());  // Verifica se a pilha está vazia
-    for nome in &nomes {
-        println!("Nome: {} na lista",nome)
+    //let mut nomes = vec!["Kinsley", "Eduardo", "Fisher"]; already exists
+    nomes.push("Lucas");  // Adiciona "Lucas" à pilha
+    nomes.pop();  // Remove o último elemento (topo da pilha)
+    
+    // Verifica o último valor
+    match nomes.last() {
+        Some(nome) => println!("O último valor é: {}", nome),
+        None => println!("A pilha está vazia."),
     }
     
+    println!("A pilha está vazia? {}", nomes.is_empty());  // Verifica se a pilha está vazia
     
-    
-    
-    
+    for nome in &nomes {
+        println!("Nome: {} na lista", nome)
+    }
 }
