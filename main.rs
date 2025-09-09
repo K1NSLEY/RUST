@@ -1,11 +1,9 @@
 fn main() {
-    println!("---------------------------------");
-    println!("Hello, just a basic guide to Rust");
-    println!("---------------------------------");
+    println!("-----------------------------------------------------");
+    println!("         Hello, just a basic guide to Rust");
     
-    println!("---------------------------------");
-    println!("           Var types");
-    println!("---------------------------------");
+    println!("-----------------------------------------------------");
+    println!("                   Var types");
     let x = 5; // Imutável
     let mut y = 10; // Mutável
     println!("x = {}, y = {}", x, y);
@@ -18,17 +16,29 @@ fn main() {
     let texto: &str = "Word";       // Only Words
     let logico: bool = false;
     println!("{} - {} - {} - {} - {}",inteiro,decimal,letra,texto,logico);
+    println!("-----------------------------------------------------");
 
-    println!("---------------------------------");
-    println!("       Rust Concat");
-    println!("---------------------------------");
+    println!();
+    println!("-----------------------------------------------------");
+    println!("              Rust Concat");
+    
+    let nomes = vec!["Kinsley","Eduardo","Fisher"];
+    println!("Now {} are friends", nomes.join(", "));
+    
     let nome1: &str = "Kinsley";
     let nome2: &str = "Eduardo";
     let nome3: &str = "Fisher";
-    println!("Now {}, {} e {} are friends",nome1,nome2,nome3);
+    println!("{}, {} e {} now are enemies",nome1,nome2,nome3);
     
     
-    println!("---------------------------------");
-    println!("       Laces");
-    println!("---------------------------------");
+    println!();
+    println!("-----------------------------------------------------");
+    println!("                  Repeat Loops");
+    println!("-----------------------------------------------------");
+    
+    
+    println!();
+    println!("-----------------------------------------------------");
+    println!("                  Repeat Loops");
+    println!("-----------------------------------------------------");
 }
