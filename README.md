@@ -125,5 +125,22 @@ fn main() {
 }
 ```
 
+<h2>
+Repetidor
+</h2>
+
+```rs
+fn main() {
+    let numeros = vec![1,2,3,4,5];
+    
+    let result: Vec<_> = numeros
+        .iter()
+        .map(|x| x * 2)
+        .collect();
+    
+    println!("{:?}", result);
+}
+```
+
 
 
