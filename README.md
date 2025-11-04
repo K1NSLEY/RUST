@@ -125,9 +125,9 @@ fn main() {
 }
 ```
 
-<h2>
+<h3>
 Repetidor
-</h2>
+</h3>
 
 ```rs
 fn main() {
